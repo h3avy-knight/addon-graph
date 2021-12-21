@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+  font-family: Cera Pro;
+}
+.app {
+  /* background-color: red; */
+  padding: 30px 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header p {
+  color: #7863e1;
+  font-size: 20px;
+  font-weight: 300;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h1 {
+  font-weight: bold;
+}
+.Addon__Chart-tabs {
   display: flex;
   flex-direction: column;
+  /* flex-basis: 50%; */
+  /* width: 100%; */
+}
+.Addon__Chart-tabs button {
+  width: 10%;
+  background: none;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+.block-Tabs {
+  display: flex;
+  justify-content: space-around;
+}
+.content-tabs {
+  display: flex;
+  flex-direction: column;
+}
+.dataset {
+  max-width: 500px;
+}
+.row-1 {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.row-2 {
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: space-between;
+}
+.row {
+  height: 1px;
+  background-color: rgb(124, 120, 120);
+  width: 100%;
+}
+.settings {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.settings_row1 {
+  display: flex;
+}
+.style {
+  max-width: 500px;
+}
+.style_row1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.style_row1 div {
+  border: 1px solid rgb(195, 187, 187);
+}
+.border {
+  border: 1px solid rgb(195, 187, 187);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.graph {
+  width: 450px;
+  border: 1px solid rgb(230, 223, 223);
+  border-radius: 5px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.Addon-chart__graph {
+  position: absolute;
+  right: 48px;
+  top: 176px;
+  /* bottom: 48px; */
+}
+
+.Addon-chart__graph button {
+  padding: 7px 13px;
+  font-weight: 600;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  border: 1.3px solid rgb(221, 212, 212);
+  border-radius: 4px;
+  background: none;
 }
